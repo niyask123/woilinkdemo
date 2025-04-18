@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* * {
+  font-family: "Montserrat", sans-serif;
+} */
+
+* .font-inter{
+    font-family: "Inter", sans-serif !important;
+}
+
+.woi_profile_01 {
+  @apply md:text-sm xl:text-xs;
+}
+.head_cat_btn {
+  @apply btn h-7 text-white text-xs border border-[#dddddd] px-3 shadow-none bg-black  font-medium;
+}
+.head_cat_mob_btn {
+  @apply btn h-[30px] text-black text-xs border border-[#e5e5e5] px-3 justify-start w-full font-medium;
+}
+
+.woi_dash_card {
+  @apply flex-1  rounded-xl bg-white  px-4 py-4 text-[10px] xl:text-[10.5px] 2xl:text-xs md:text-xs transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg;
+}
+.woi_dash_card_create {
+  @apply flex-1  rounded-xl bg-white  px-4 py-4 text-[10px] xl:text-[10.5px] 2xl:text-xs md:text-xs transition-all;
+}
+
+.woi_dash_card {
+  /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
+  /* border: 1px solid #e7e7e7; */
+}
+.woi_create_card_01 {
+    @apply btn bg-white rounded-none justify-start  flex text-start text-black text-xs border border-none border-[#e5e5e5] px-3 font-medium;
+  }
+.text-xxs{
+  font-size: 10px;
+}
+.woi_sec_two_card{
+  @apply  p-3  rounded-lg relative flex  flex-col gap-2 py-5 hover:cursor-pointer transition duration-200 text-sm active:scale-95 justify-center items-center ;
+}
+.woi_sec_two_svg {
+  @apply bg-white
+}
+.woi_dashboard_notification{
+  @apply flex items-center absolute top-1 right-1 px-2  py-1  text-white rounded-full font-medium
+}
+
+
+.woi_sec_two_card_svg{
+  @apply object-contain w-8 h-8 bg-white/75 border border-[#dddddd]/50 p-1.5 rounded-lg;
+}
+
+/* 
+.woi_bg_grad_sec_3{
+  background: rgb(22,60,156);
+background: linear-gradient(90deg, rgba(22,60,156,1) 0%, rgba(0,4,171,1) 27%, rgba(34,9,153,1) 93%);
+} */
+/* .woi_bg_grad_sec_3 {
+  width: 100%;
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+} */
+.woi_bg_grad_sec_3 {
+  /* Basic dimensions and centering */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+.profile_details_view{
+  @apply px-2 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-sm hover:cursor-pointer;
+}
+.woi_profile_dash_card {
+  @apply flex-1 flex-row rounded-xl  bg-white  px-4 py-4 text-[10px] md:text-xs transition-all duration-300 ease-in-out hover:h-full hover:shadow-md;
+}
+/* *{
+  border: 1px solid;
+} */
+.woi_label_absolute_01{
+  @apply absolute font-medium text-gray-500 left-3 top-3 px-1 transition-all 
+  bg-transparent hover:cursor-auto peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 
+  peer-focus:-top-2 peer-focus:text-[11px] peer-focus:rounded-full peer-focus:px-3 peer-focus:bg-black peer-focus:text-white 
+  peer-not-placeholder-shown:-top-2  peer-not-placeholder-shown:rounded-full peer-not-placeholder-shown:px-3 peer-not-placeholder-shown:text-[11px] peer-not-placeholder-shown:text-white peer-not-placeholder-shown:bg-black
+}
+.woi_login_connect {
+  @apply bg-white flex justify-center gap-3 py-3 hover:bg-gray-100 
+         hover:border-gray-100 rounded-full hover:cursor-pointer 
+         border border-gray-300 items-center transition-all duration-150 
+         active:scale-95;
+}
+
+
+.woi_log_btn_01{
+  @apply btn rounded-full shadow-none py-6 transition-all duration-300
+}
+.woi_log_btn_02{
+  @apply bg-blue-500 hover:bg-blue-700 transition-all duration-300 ease-in-out text-white cursor-pointer
+}
+.woi_log_btn_03{
+  @apply bg-gray-300 text-gray-600 cursor-not-allowed py-6
+}
+/* this using start do-more page befor btn*/
+.woi_log_btn_04{
+  @apply btn rounded-full h-14 w-full py-3 text-base font-semibold bg-blue-600 text-white hover:bg-blue-700 shadow-none transition-all duration-300 border-none
+}
+/* this using input label input type class cover */
+.woi_log_input_01{
+  @apply border w-full rounded-lg px-3 py-2 h-12 focus:outline-none  
+  bg-gray-100 focus:bg-white transition-colors duration-200 
+border-gray-300 hover:border-black hover:border-2 ease-in-out
+}
+/* main headding */
+.woi_log_main_head{
+  @apply text-black md:leading-none leading-9 text-3xl  mx-auto font-bold text-center tracking-[-1px] lg:text-5xl lg:tracking-[-2px]
+}
+
+@plugin "daisyui"{
+  themes: light --default;
+}
+

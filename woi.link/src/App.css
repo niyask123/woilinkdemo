@@ -1,0 +1,106 @@
+.scrollbar-none {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.woi_dashboard_notification{
+  background: gray;
+  font-size: 10.5px;
+}
+/* From Uiverse.io by SelfMadeSystem */
+.woi_dash_card {
+  position: relative; /* Ensure the child is positioned inside */
+  /* height: 200px; */
+  overflow: hidden;
+}
+
+.woi_inner_card {
+  position: absolute;
+  inset: 0;
+  background: #000;
+}
+
+
+.woi_inner_card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMTkuNSIgbnVtT2N0YXZlcz0iMTAiIHJlc3VsdD0idHVyYnVsZW5jZSIvPjxmZUNvbXBvc2l0ZSBvcGVyYXRvcj0iaW4iIGluPSJ0dXJidWxlbmNlIiBpbjI9IlNvdXJjZUFscGhhIiByZXN1bHQ9ImNvbXBvc2l0ZSIvPjxmZUNvbG9yTWF0cml4IGluPSJjb21wb3NpdGUiIHR5cGU9Imx1bWluYW5jZVRvQWxwaGEiLz48ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJjb21wb3NpdGUiIG1vZGU9ImNvbG9yLWJ1cm4iLz48L2ZpbHRlcj48L2RlZnM+PGcgZmlsdGVyPSJ1cmwoJyNhJykiPjxwYXRoIGZpbGw9IiMyNmIiIGQ9Ik0wIDBoMTAwdjEwMEgweiIvPjxwYXRoIGQ9Ik0wIDB2MTAwaDEwMFYwWiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiM0OGYiIGZpbGw9IiMwMDAwIi8+PHBhdGggZmlsbD0iIzQ4ZjUiIGQ9Ik01MCAwaDF2MTAwaC0xeiIvPjxwYXRoIGZpbGw9IiM0OGY1IiBkPSJNMCA1MGgxMDB2MUgweiIvPjwvZz48L3N2Zz4=");
+  mask: linear-gradient(rgba(184, 184, 184, 0.267), #e0e0e0);
+}
+.woi_svg_round svg{
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 4px 5px;
+}
+.woi_create_bg_card_01{
+  
+}
+
+
+
+
+
+.woi_upgrade_btn{
+  background: rgb(247,84,10);
+background: linear-gradient(90deg, rgba(247,84,10,1) 0%, rgba(230,72,0,1) 35%, rgba(239,14,154,1) 100%);
+}
+
+.bg_woi_payment_side{
+  /* background: rgb(42,73,60);
+background: linear-gradient(90deg, rgba(42,73,60,1) 0%, rgba(42,73,60,1) 27%, rgba(105,117,71,1) 93%); */
+background-color: white;
+}
+.woi_sec_two_svg1 {
+  
+}
+
+.croper_bg{
+  --color: #E1E1E1;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
+.woi_digi_3d_shadow{
+  box-shadow: rgba(255, 255, 255, 21.56) 11px 16px 70px 22px;
+}
+
+
+/* @keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.ai-background:hover {
+  background: linear-gradient(270deg, #00f2fe, #4facfe, #00f2fe);
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+} */
+
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+}
+
+/* box shadow */
+.shadow_woi_01{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
